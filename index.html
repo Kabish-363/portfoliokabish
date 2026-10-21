@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Kabish - Second Year Student at KGCAS, Sathyamangalam, India. Frontend Developer creating thoughtful digital experiences.">
+  <meta name="author" content="Kabish">
+  <title>Kabish | Developer Portfolio</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       SITE HEADER / NAVIGATION
+       Links: Home, Projects, Contact + Theme Toggle & "Let's talk" CTA Button
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+      <!-- Brand Logo -->
+      <a href="#home" class="brand-logo" aria-label="Kabish Home">
+        <span>Kabish</span>
+        <span class="brand-dot"></span>
+      </a>
+
+      <!-- Main Navigation Links -->
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links" id="navLinksList">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons: "Let's talk" CTA Button & Mobile Menu -->
+      <div class="nav-actions">
+        <!-- "Let's talk" CTA Pill Button (Styled like reference mockup top-right) -->
+        <a href="#contact" class="cta-button">
+          Let's talk
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle Navigation Menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO SECTION (HOME)
+         Photo, Name, Highlighted Project, KGCAS Student, Second Year, Sathyamangalam India
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="container hero-grid">
+        
+        <!-- Left Column: Content, Bio & Badges -->
+        <div class="hero-content">
+          <div class="hero-greeting-wrap">
+            <h1 class="hero-title">
+              Hi, I'm <span class="title-name">Kabish.</span>
+            </h1>
+            <!-- Playful Coral Wave Doodle under name (Echoing uploaded reference UI) -->
+            <svg class="hero-wave-doodle" viewBox="0 0 85 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 14C12 7 22 20 34 11C44 4 54 18 66 10C74 5 78 12 81 14" stroke="currentColor" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <p class="hero-subtitle">
+            I build thoughtful digital experiences.
+          </p>
+
+          <!-- Core Attributes requested: KGCAS Student, Second Year, Sathyamangalam India -->
+          <div class="hero-meta-badges">
+            <span class="meta-badge">
+              <span class="meta-badge-icon">🎓</span>
+              <span>KGCAS Student</span>
+            </span>
+            <span class="meta-badge">
+              <span class="meta-badge-icon">📅</span>
+              <span>Second Year</span>
+            </span>
+            <span class="meta-badge location">
+              <span class="meta-badge-icon">📍</span>
+              <span>Sathyamangalam, India</span>
+            </span>
+          </div>
+
+          <!-- Highlighted Project Callout -->
+          <div class="highlighted-project-callout">
+            <div class="highlighted-left">
+              <div class="highlight-star-icon">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <div class="highlight-text-label">Highlighted Project</div>
+                <div class="highlight-title">Picxels Media Frontend Page</div>
+              </div>
+            </div>
+            <a href="https://picxelsmedia.netlify.app" target="_blank" rel="noopener noreferrer" class="highlight-action-btn">
+              <span>View Site</span>
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Action Buttons: "View my work ->" & Quick Gmail button -->
+          <div class="hero-cta-row">
+            <a href="#projects" class="hero-view-work-btn">
+              <span>View my work</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <button class="hero-gmail-btn trigger-gmail-quick" aria-label="Send Email directly via Gmail">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>Gmail Me</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Visual with Portrait & Organic Pastel Blob -->
+        <div class="hero-visual-wrap">
+          <!-- Organic Soft Blob Backdrop -->
+          <div class="hero-organic-blob"></div>
+
+          <!-- Playful Decorative 3 Accent Sparkle Dashes (Exact detail from reference mockup) -->
+          <svg class="hero-sparkle-dashes" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12" y1="46" x2="2" y2="48" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="22" y1="28" x2="14" y2="18" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+            <line x1="42" y1="16" x2="48" y2="4" stroke="currentColor" stroke-width="3.5" stroke-linecap="round"/>
+          </svg>
+
+          
+
+          <!-- Portrait Frame with Kabish's photo -->
+          <div class="hero-photo-frame">
+            <img 
+              src="assets/images/kabish-cutout.png" 
+              alt="Portrait of Kabish" 
+              class="hero-portrait-img"
+              onerror="this.onerror=null; this.src='assets/images/kabish.jpg';"
+            >
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         PROJECTS SECTION
+         3 Pastel Laptop Mockup Cards:
+         1) Picxels Media Frontend Page (picxelsmedia.netlify.app)
+         2) E-Billing with Swiggy Integration Software
+         3) Personal Portfolio (kabishp.netlify.app)
+         ========================================================================== -->
+    <section class="projects-section" id="projects">
+      <div class="container">
+        
+        <!-- Section Header -->
+        <div class="section-head">
+          <span class="section-tag">Featured Portfolio</span>
+          <h2 class="section-title">Selected Works</h2>
+          <p class="section-desc">
+            Explore live web projects, agency frontends, and intelligent business billing software engineered with clean code and modern aesthetics.
+          </p>
+        </div>
+
+        <!-- 3 Project Cards in Horizontal Grid (Matching reference mockup layout) -->
+        <div class="projects-grid">
+          
+          <!-- PROJECT 1: Picxels Media Frontend Page -->
+          <article class="project-card card-tint-peach">
+            <div class="laptop-mockup-wrapper">
+              <div class="laptop-lid">
+                <div class="laptop-screen">
+                  <!-- Browser Bar -->
+                  <div class="screen-browser-bar">
+                    <span class="traffic-dot red"></span>
+                    <span class="traffic-dot yellow"></span>
+                    <span class="traffic-dot green"></span>
+                    <span class="screen-url-pill">picxelsmedia.netlify.app</span>
+                  </div>
+                  <!-- Mockup Preview SVG -->
+                  <div class="screen-content">
+                    <svg viewBox="0 0 320 170" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="320" height="170" fill="#0D1117"/>
+                      <!-- Top Nav in Mockup -->
+                      <rect x="15" y="10" width="60" height="8" rx="4" fill="#FF5E62"/>
+                      <rect x="230" y="10" width="30" height="6" rx="3" fill="#6E7681"/>
+                      <rect x="270" y="8" width="35" height="10" rx="5" fill="#3B82F6"/>
+                      
+                      <!-- Hero Agency Banner -->
+                      <rect x="25" y="32" width="140" height="12" rx="4" fill="#F0F6FC"/>
+                      <rect x="25" y="49" width="180" height="7" rx="3" fill="#8B949E"/>
+                      <rect x="25" y="60" width="110" height="7" rx="3" fill="#8B949E"/>
+                      <rect x="25" y="75" width="65" height="14" rx="7" fill="#FF5E62"/>
+                      
+                      <!-- Agency Visual Card Grid -->
+                      <rect x="200" y="30" width="105" height="68" rx="8" fill="#161B22" stroke="#30363D"/>
+                      <circle cx="252" cy="55" r="14" fill="#FA5E4D" opacity="0.8"/>
+                      <polygon points="248,49 260,55 248,61" fill="#FFFFFF"/>
+                      <text x="252" y="85" font-family="sans-serif" font-size="7" fill="#8B949E" text-anchor="middle">Agency Showreel</text>
+
+                      <!-- Metrics Row -->
+                      <rect x="25" y="106" width="280" height="48" rx="6" fill="#161B22"/>
+                      <rect x="35" y="116" width="70" height="10" rx="3" fill="#38BDF8"/>
+                      <rect x="35" y="132" width="50" height="6" rx="2" fill="#6E7681"/>
+                      <rect x="130" y="116" width="70" height="10" rx="3" fill="#34D399"/>
+                      <rect x="130" y="132" width="50" height="6" rx="2" fill="#6E7681"/>
+                      <rect x="225" y="116" width="70" height="10" rx="3" fill="#F472B6"/>
+                      <rect x="225" y="132" width="50" height="6" rx="2" fill="#6E7681"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base">
+                <div class="laptop-notch"></div>
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="project-info">
+              <a href="https://picxelsmedia.netlify.app" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                <h3 class="project-card-title">Picxels Media Frontend</h3>
+              </a>
+              <p class="project-card-desc">
+                High-performance creative media agency frontend featuring responsive design, video showcases, dynamic banners, and fluid CSS styling.
+              </p>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Netlify</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="https://picxelsmedia.netlify.app" target="_blank" rel="noopener noreferrer" class="project-redirect-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+
+                <button class="project-details-btn" data-modal-target="picxels-media">
+                  <span>Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: E-Billing with Swiggy Integration Software -->
+          <article class="project-card card-tint-mint">
+            <div class="laptop-mockup-wrapper">
+              <div class="laptop-lid">
+                <div class="laptop-screen">
+                  <!-- Browser Bar -->
+                  <div class="screen-browser-bar">
+                    <span class="traffic-dot red"></span>
+                    <span class="traffic-dot yellow"></span>
+                    <span class="traffic-dot green"></span>
+                    <span class="screen-url-pill">localhost:8080/ebill-pos</span>
+                  </div>
+                  <!-- Mockup Preview SVG -->
+                  <div class="screen-content">
+                    <svg viewBox="0 0 320 170" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="320" height="170" fill="#0B132B"/>
+                      
+                      <!-- POS Top Nav -->
+                      <rect x="12" y="8" width="90" height="10" rx="3" fill="#10B981"/>
+                      <circle cx="295" cy="13" r="6" fill="#FC8019"/> <!-- Swiggy Orange -->
+
+                      <!-- Left Panel: Table Grid / Swiggy Queue -->
+                      <rect x="12" y="24" width="180" height="135" rx="6" fill="#1C2541"/>
+                      
+                      <!-- Swiggy Live Badge -->
+                      <rect x="20" y="32" width="70" height="12" rx="4" fill="#FC8019"/>
+                      <text x="55" y="41" font-family="sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Swiggy Live</text>
+                      
+                      <!-- Order Row 1 -->
+                      <rect x="20" y="50" width="164" height="24" rx="4" fill="#3A506B"/>
+                      <text x="28" y="62" font-family="sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF">#3842 • Chicken Biryani x2</text>
+                      <rect x="142" y="55" width="36" height="12" rx="3" fill="#10B981"/>
+                      <text x="160" y="64" font-family="sans-serif" font-size="6" fill="#FFFFFF" text-anchor="middle">Ready</text>
+
+                      <!-- Order Row 2 -->
+                      <rect x="20" y="80" width="164" height="24" rx="4" fill="#3A506B"/>
+                      <text x="28" y="92" font-family="sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF">#3843 • Paneer Butter Masala</text>
+                      <rect x="142" y="85" width="36" height="12" rx="3" fill="#F59E0B"/>
+                      <text x="160" y="94" font-family="sans-serif" font-size="6" fill="#FFFFFF" text-anchor="middle">Cooking</text>
+
+                      <!-- Order Row 3 -->
+                      <rect x="20" y="110" width="164" height="24" rx="4" fill="#3A506B"/>
+                      <text x="28" y="122" font-family="sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF">#3844 • Masala Dosa x3</text>
+                      <rect x="142" y="115" width="36" height="12" rx="3" fill="#3B82F6"/>
+                      <text x="160" y="124" font-family="sans-serif" font-size="6" fill="#FFFFFF" text-anchor="middle">New</text>
+
+                      <!-- Right Panel: Active Bill & GST -->
+                      <rect x="198" y="24" width="110" height="135" rx="6" fill="#1C2541"/>
+                      <text x="253" y="40" font-family="sans-serif" font-size="8" font-weight="bold" fill="#FFFFFF" text-anchor="middle">TAX INVOICE</text>
+                      <line x1="206" y1="46" x2="300" y2="46" stroke="#475569" stroke-width="1"/>
+                      
+                      <text x="208" y="60" font-family="monospace" font-size="6.5" fill="#94A3B8">Subtotal:  ₹ 840.00</text>
+                      <text x="208" y="72" font-family="monospace" font-size="6.5" fill="#94A3B8">GST (5%):  ₹  42.00</text>
+                      <text x="208" y="88" font-family="monospace" font-size="7.5" font-weight="bold" fill="#10B981">TOTAL:     ₹ 882.00</text>
+
+                      <rect x="208" y="118" width="90" height="16" rx="4" fill="#10B981"/>
+                      <text x="253" y="129" font-family="sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle">PRINT RECEIPT 🖨️</text>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base">
+                <div class="laptop-notch"></div>
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="project-info">
+              <h3 class="project-card-title">E-Billing with Swiggy Integration</h3>
+              <p class="project-card-desc">
+                Point-of-sale restaurant software engineered to automate live Swiggy delivery orders, print GST tax invoices, and track kitchen queues.
+              </p>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">POS System</span>
+                <span class="project-tag">Swiggy API</span>
+                <span class="project-tag">GST Billing</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <button class="project-redirect-link" data-modal-target="ebilling-swiggy">
+                  <span>View Details</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg>
+                </button>
+
+                <button class="project-details-btn" data-modal-target="ebilling-swiggy">
+                  <span>Architecture</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: Personal Portfolio -->
+          <article class="project-card card-tint-sky">
+            <div class="laptop-mockup-wrapper">
+              <div class="laptop-lid">
+                <div class="laptop-screen">
+                  <!-- Browser Bar -->
+                  <div class="screen-browser-bar">
+                    <span class="traffic-dot red"></span>
+                    <span class="traffic-dot yellow"></span>
+                    <span class="traffic-dot green"></span>
+                    <span class="screen-url-pill">kabishp.netlify.app</span>
+                  </div>
+                  <!-- Mockup Preview SVG -->
+                  <div class="screen-content">
+                    <svg viewBox="0 0 320 170" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="320" height="170" fill="#0A1128"/>
+                      
+                      <!-- Header -->
+                      <rect x="20" y="12" width="50" height="8" rx="4" fill="#00E5FF"/>
+                      <rect x="220" y="12" width="22" height="6" rx="3" fill="#94A3B8"/>
+                      <rect x="250" y="12" width="22" height="6" rx="3" fill="#94A3B8"/>
+                      <rect x="280" y="10" width="26" height="10" rx="5" fill="#3B82F6"/>
+
+                      <!-- Hero Area in Portfolio -->
+                      <rect x="25" y="38" width="130" height="14" rx="4" fill="#FFFFFF"/>
+                      <rect x="25" y="58" width="150" height="8" rx="3" fill="#64748B"/>
+                      <rect x="25" y="72" width="110" height="8" rx="3" fill="#64748B"/>
+                      
+                      <!-- Portrait circle badge in preview -->
+                      <circle cx="245" cy="65" r="32" fill="#00E5FF" opacity="0.2"/>
+                      <circle cx="245" cy="65" r="24" fill="#3B82F6"/>
+                      <text x="245" y="70" font-family="sans-serif" font-size="14" fill="#FFFFFF" text-anchor="middle">KP</text>
+
+                      <!-- Project preview cards below -->
+                      <rect x="25" y="96" width="80" height="54" rx="6" fill="#1C2541"/>
+                      <rect x="33" y="104" width="40" height="6" rx="2" fill="#00E5FF"/>
+                      <rect x="33" y="115" width="60" height="4" rx="2" fill="#64748B"/>
+
+                      <rect x="118" y="96" width="80" height="54" rx="6" fill="#1C2541"/>
+                      <rect x="126" y="104" width="40" height="6" rx="2" fill="#38BDF8"/>
+                      <rect x="126" y="115" width="60" height="4" rx="2" fill="#64748B"/>
+
+                      <rect x="210" y="96" width="85" height="54" rx="6" fill="#1C2541"/>
+                      <rect x="218" y="104" width="40" height="6" rx="2" fill="#F472B6"/>
+                      <rect x="218" y="115" width="60" height="4" rx="2" fill="#64748B"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="laptop-base">
+                <div class="laptop-notch"></div>
+              </div>
+            </div>
+
+            <!-- Card Info -->
+            <div class="project-info">
+              <a href="https://kabishp.netlify.app" target="_blank" rel="noopener noreferrer" class="project-title-link">
+                <h3 class="project-card-title">Personal Portfolio</h3>
+              </a>
+              <p class="project-card-desc">
+                Developer portfolio showcase featuring personal bio, creative project catalog, responsive mobile navigation, and live Netlify hosting.
+              </p>
+
+              <!-- Tags -->
+              <div class="project-tags">
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Netlify</span>
+              </div>
+
+              <!-- Action Links -->
+              <div class="project-actions">
+                <a href="https://kabishp.netlify.app" target="_blank" rel="noopener noreferrer" class="project-redirect-link">
+                  <span>Visit Site</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                  </svg>
+                </a>
+
+                <button class="project-details-btn" data-modal-target="personal-portfolio">
+                  <span>Details</span>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Tech Stack Pill Row (Mockup Detail: HTML, CSS, JavaScript pills) -->
+        <div class="skills-pills-row">
+          <span class="skill-pill pill-html">HTML5</span>
+          <span class="skill-pill pill-css">CSS3</span>
+          <span class="skill-pill pill-js">JavaScript</span>
+          <span class="skill-pill pill-responsive">Responsive UI</span>
+          <span class="skill-pill pill-api">REST APIs</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         CONTACT SECTION WITH GMAIL TOGGLE
+         "Contact - Gmail toggle (to kabishdirector@gmail.com)"
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-card-box">
+          
+          <div class="contact-header">
+            <span class="section-tag">Let's Connect</span>
+            <h2>Get In Touch</h2>
+            <p>
+              Whether you have an upcoming project, want to discuss software development, or just want to say hi — reach out directly via Gmail!
+            </p>
+          </div>
+
+          <!-- THE GMAIL TOGGLE INTERFACE -->
+          <div class="gmail-toggle-container">
+            <div class="gmail-toggle-label">Preferred Contact Channel</div>
+            <div class="gmail-toggle-switch" role="tablist">
+              <button class="toggle-option-btn active" data-mode="gmail" role="tab" aria-selected="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>Gmail Web App</span>
+              </button>
+
+              <button class="toggle-option-btn" data-mode="default" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                </svg>
+                <span>Default Mail Client</span>
+              </button>
+
+              <button class="toggle-option-btn" data-mode="copy" role="tab" aria-selected="false">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                <span>Copy Address</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quick Address & Copy Bar -->
+          <div class="gmail-quick-address-bar">
+            <div class="gmail-address-display">
+              <div class="gmail-icon-wrap">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                </svg>
+              </div>
+              <div>
+                <div style="font-size: 0.8rem; color: var(--text-muted); font-weight: 600;">Direct Email:</div>
+                <div class="gmail-address-text">kabishdirector@gmail.com</div>
+              </div>
+            </div>
+
+            <button class="copy-email-btn" id="copyEmailBtn" aria-label="Copy Email address to clipboard">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span>Copy Address</span>
+            </button>
+          </div>
+
+          <!-- Interactive Message Composer Form -->
+          <form class="contact-form" id="contactForm">
+            <div class="contact-form-grid">
+              
+              <div class="form-group">
+                <label for="senderName" class="form-label">Your Name</label>
+                <input type="text" id="senderName" class="form-input" placeholder="e.g. Alex Johnson" required>
+              </div>
+
+              <div class="form-group">
+                <label for="senderSubject" class="form-label">Subject</label>
+                <input type="text" id="senderSubject" class="form-input" placeholder="e.g. Project Inquiry / Web Development" required>
+              </div>
+
+              <div class="form-group full-width">
+                <label for="senderMessage" class="form-label">Your Message</label>
+                <textarea id="senderMessage" class="form-textarea" placeholder="Hello Kabish, I checked out your portfolio and would like to talk about..." required></textarea>
+              </div>
+
+            </div>
+
+            <!-- Send Action Button -->
+            <button type="submit" class="gmail-send-action-btn" id="gmailSendActionBtn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              <span id="sendButtonText">Compose in Gmail Web App ↗</span>
+            </button>
+          </form>
+
+          <!-- Contact Metadata Row: Location, Education, Status -->
+          <div class="contact-meta-row">
+            <div class="contact-meta-item">
+              <div class="meta-item-icon">📍</div>
+              <div class="meta-item-content">
+                <span class="meta-item-title">Location</span>
+                <span class="meta-item-val">Sathyamangalam, India</span>
+              </div>
+            </div>
+
+            <div class="contact-meta-item">
+              <div class="meta-item-icon">🎓</div>
+              <div class="meta-item-content">
+                <span class="meta-item-title">College</span>
+                <span class="meta-item-val">KGCAS • 2nd Year</span>
+              </div>
+            </div>
+
+            <div class="contact-meta-item">
+              <div class="meta-item-icon">✉️</div>
+              <div class="meta-item-content">
+                <span class="meta-item-title">Email</span>
+                <span class="meta-item-val">kabishdirector@gmail.com</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-copy">
+        &copy; 2026 <strong>Kabish</strong>. Crafted with clean HTML + CSS + JS.
+      </div>
+
+      <div class="footer-links">
+        <a href="#home" class="footer-link">Home</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#contact" class="footer-link">Contact</a>
+        <a href="https://picxelsmedia.netlify.app" target="_blank" rel="noopener noreferrer" class="footer-link">Picxels Media</a>
+        <a href="https://kabishp.netlify.app" target="_blank" rel="noopener noreferrer" class="footer-link">Old Portfolio</a>
+      </div>
+
+      <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="12" y1="19" x2="12" y2="5"></line>
+          <polyline points="5 12 12 5 19 12"></polyline>
+        </svg>
+      </button>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG (PROJECT DEEP-DIVE)
+       ========================================================================== -->
+  <div class="modal-backdrop" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalContentTitle">
+    <div class="modal-dialog">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+
+      <div class="modal-body">
+        <span class="modal-project-badge" id="modalContentBadge">Feature Spotlight</span>
+        <h3 class="modal-project-title" id="modalContentTitle">Project Name</h3>
+        <p class="modal-project-desc" id="modalContentDesc">Detailed project description goes here.</p>
+        
+        <h4 style="font-size: 0.95rem; font-weight: 700; margin-bottom: 12px; color: var(--text-main);">Key Highlights & Capabilities:</h4>
+        <ul class="modal-feature-list" id="modalFeatureList"></ul>
+
+        <div class="modal-actions">
+          <a href="#" class="cta-button" id="modalExternalLink">View Project</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       TOAST NOTIFICATION (Copy feedback & theme updates)
+       ========================================================================== -->
+  <div class="toast-notice" id="toastNotice" role="status" aria-live="polite">
+    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="20 6 9 17 4 12"></polyline>
+    </svg>
+    <span id="toastMessage">Action completed</span>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
